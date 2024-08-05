@@ -1,38 +1,28 @@
 <h1 align="center">
-  <img
-    src=".github/nlw-journey-logo.png"
-    title="Logo NLW Journey"
-    alt="Logo NLW Journey"
-    width="64px"
-  />
-  NLW Journey (Node)
+  Plann.er
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/pabloxt14/nlw-journey-node">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/danielegiidio/planner_backend">
 
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/pabloxt14/nlw-journey-node" />
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/danielegiidio/planner_backend" />
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/pabloxt14/nlw-journey-node">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/danielegiidio/planner_backend">
   
   <a href="https://github.com/pabloxt14/nlw-journey-node/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pabloxt14/nlw-journey-node">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/danielegiidio/planner_backend">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
 
-   <a href="https://github.com/pabloxt14/nlw-journey-node/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/pabloxt14/nlw-journey-node?style=social">
-  </a>
+
 </p>
 
-<p>
-  <img src=".github/cover.png" alt="Capa do projeto" />
+<p align="center" >
+  <img src="https://i.ibb.co/tQnnLFD/Cover.png" alt="Capa do projeto"  />
 </p>
 
-<h4 align="center"> 
-	🚀 Aplicação finalizada 🚀
-</h4>
+
 
 <p align="center">
  <a href="#-about">About</a> | 
@@ -45,10 +35,11 @@
 
 ## 💻 About
 
-Esta é a API da aplicação de nome **Plann.er**, a qual consiste em um sistema de planejamento de viagens, na qual você pode montar planos de viagens com amigos, registrar atividades, adicionar links úteis sobre a viagem, entre diversas outras funcionalidades.
+Plann.er é uma aplicação de planejamento de viagens que permite criar e gerenciar planos de viagem de forma colaborativa. Com Plann.er, você pode:
 
-Essa aplicação foi desenvolvida durante o evento **NLW Journey** da [Rocketseat](https://www.rocketseat.com.br/) utilizando principalmente tecnologias como `Node`, `TypeScript` e `Fastify`.
-
+- Montar planos de viagens com amigos.
+- Registrar atividades e eventos importantes.
+- Adicionar links úteis e recursos sobre a viagem.
 
 <!-- ## 🔗 Deploy
 
@@ -67,16 +58,15 @@ Cria uma nova viagem.
 
 ```json
 {
-  "destination": "São Paulo",
-  "starts_at": "2024-08-01 18:00:00",
-  "ends_at": "2024-08-04 18:00:0",
-  "owner_name": "John Doe",
-  "owner_email": "johndoe@gmail.com",
-  "emails_to_invite": [
-    "pedrodoe@gmail.com",
-    "marydoe@gmail.com",
-    "sarahdoe@gmail.com"
-  ]
+    "destination": "Florianóplis",
+    "starts_at": "2024-08-10 10:00:00",
+    "ends_at": "2024-08-20 10:00:00",
+    "owner_name": "Daniel Egidio",
+    "owner_email": "daniel@gmail.com",
+    "emails_to_invite": [
+        "daniel@gmail.com",
+        "johndoe@gmail.com"
+    ]
 }
 ```
 
@@ -84,7 +74,7 @@ Cria uma nova viagem.
 
 ```json
 {
-  "tripId": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
+    "tripId": "ce32c8a5-2c13-44fd-8050-27dfcf24c201"
 }
 ```
 
@@ -96,13 +86,13 @@ Retorna os detalhes de uma viagem.
 
 ```json
 {
-  "trip": {
-    "id": "f944daf7-e7e6-47a2-b050-1556d6a9e963",
-    "destination": "Rio de Janeiro",
-    "starts_at": "2024-08-01T21:00:00.000Z",
-    "ends_at": "2024-08-04T21:00:00.000Z",
-    "is_confirmed": true
-  }
+    "trip": {
+        "id": "ce32c8a5-2c13-44fd-8050-27dfcf24c201",
+        "destination": "Florianóplis",
+        "starts_at": "2024-08-10T13:00:00.000Z",
+        "ends_at": "2024-08-20T13:00:00.000Z",
+        "is_confirmed": false
+    }
 }
 ```
 
@@ -114,9 +104,9 @@ Altera uma viagem.
 
 ```json
 {
-  "destination": "Rio de Janeiro",
-  "starts_at": "2024-08-01 18:00:00",
-  "ends_at": "2024-08-04 18:00:0"
+    "destination": "Florianóplis - SC",
+    "starts_at": "2024-08-15 10:00:00",
+    "ends_at": "2024-08-20 10:00:00"
 }
 ```
 
@@ -124,7 +114,7 @@ Altera uma viagem.
 
 ```json
 {
-  "tripId": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
+    "tripId": "ce32c8a5-2c13-44fd-8050-27dfcf24c201"
 }
 ```
 
@@ -144,7 +134,7 @@ Envia um convite a um participante para uma viagem.
 
 ```json
 {
-  "email": "johndoe3@gmail.com"
+    "email": "teste@gmail.com"
 }
 ```
 
@@ -152,7 +142,7 @@ Envia um convite a um participante para uma viagem.
 
 ```json
 {
-  "participantId": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
+    "participantId": "7a008aa3-134b-4e72-a531-7ebb41010c7b"
 }
 ```
 
@@ -164,26 +154,26 @@ Retorna os participantes de uma viagem.
 
 ```json
 {
-  "participants": [
-    {
-      "id": "a91c91e1-8cca-4649-88e8-91cdf143df22",
-      "name": "John Doe",
-      "email": "johndoe@gmail.com",
-      "is_confirmed": true
-    },
-    {
-      "id": "dce0de32-421a-4512-9580-21c75648350d",
-      "name": null,
-      "email": "marydoe@gmail.com",
-      "is_confirmed": false
-    },
-    {
-      "id": "d673c4eb-f39a-4de4-8617-ef23b3707693",
-      "name": null,
-      "email": "pedro@gmail.com",
-      "is_confirmed": true
-    }
-  ]
+    "participants": [
+        {
+            "id": "4693de37-1d8c-492a-9025-53cae2300f24",
+            "name": "Daniel Egidio",
+            "email": "daniel@gmail.com",
+            "is_confirmed": true
+        },
+        {
+            "id": "59ce11ac-50ef-4739-b444-458156bce2a7",
+            "name": null,
+            "email": "johndoe@gmail.com",
+            "is_confirmed": false
+        },
+        {
+            "id": "7a008aa3-134b-4e72-a531-7ebb41010c7b",
+            "name": null,
+            "email": "teste@gmail.com",
+            "is_confirmed": false
+        }
+    ]
 }
 ```
 
@@ -195,12 +185,12 @@ Retorna os detalhes de um participante.
 
 ```json
 {
-  "participant": {
-    "id": "a91c91e1-8cca-4649-88e8-91cdf143df22",
-    "name": "John Doe",
-    "email": "johndoe@gmail.com",
-    "is_confirmed": true
-  }
+    "participant": {
+        "id": "7a008aa3-134b-4e72-a531-7ebb41010c7b",
+        "name": null,
+        "email": "teste@gmail.com",
+        "is_confirmed": false
+    }
 }
 ```
 
@@ -218,8 +208,8 @@ Cria uma atividade em uma viagem.
 
 ```json
 {
-  "title": "Play",
-  "occurs_at": "2024-08-01 18:00:00"
+  "title": "Academia",
+  "occurs_at": "2024-08-18 18:00:00"
 }
 ```
 
@@ -239,30 +229,39 @@ Retorna as atividades de uma viagem.
 
 ```json
 {
-  "activities": [
-    {
-      "date": "2024-08-01T21:00:00.000Z",
-      "activities": [
+    "activities": [
         {
-          "id": "6e444c9e-11b8-4b95-b5ff-73288f3c0b5e",
-          "title": "Play",
-          "occurs_at": "2024-08-01T22:00:00.000Z",
-          "trip_id": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
-        }
-      ]
-    },
-    {
-      "date": "2024-08-02T21:00:00.000Z",
-      "activities": [
+            "date": "2024-08-15T13:00:00.000Z",
+            "activities": []
+        },
         {
-          "id": "6e444c9e-11b8-4b95-b5ff-73288f3c0b5e",
-          "title": "Play",
-          "occurs_at": "2024-08-02T22:00:00.000Z",
-          "trip_id": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
+            "date": "2024-08-16T13:00:00.000Z",
+            "activities": []
+        },
+        {
+            "date": "2024-08-17T13:00:00.000Z",
+            "activities": []
+        },
+        {
+            "date": "2024-08-18T13:00:00.000Z",
+            "activities": [
+                {
+                    "id": "d63bcbbc-3c50-4cb6-8961-c1f9c6e5fabf",
+                    "title": "Academia",
+                    "occurs_at": "2024-08-18T21:00:00.000Z",
+                    "trip_id": "ce32c8a5-2c13-44fd-8050-27dfcf24c201"
+                }
+            ]
+        },
+        {
+            "date": "2024-08-19T13:00:00.000Z",
+            "activities": []
+        },
+        {
+            "date": "2024-08-20T13:00:00.000Z",
+            "activities": []
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
 
@@ -276,8 +275,8 @@ Cria um link em uma viagem.
 
 ```json
 {
-  "title": "Website",
-  "url": "https://www.rocketseat.com.br"
+    "title" : "Reserva do AirBnB",
+    "url" : "http://airbnb.com/reserva-journey"
 }
 ```
 
@@ -285,7 +284,7 @@ Cria um link em uma viagem.
 
 ```json
 {
-  "linkId": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
+    "linkId": "e1b00fc4-f99a-4cd5-b33a-6db2b3b72716"
 }
 ```
 
@@ -297,20 +296,14 @@ Retorna os links de uma viagem.
 
 ```json
 {
-  "links": [
-    {
-      "id": "f944daf7-e7e6-47a2-b050-1556d6a9e963",
-      "title": "Website",
-      "url": "https://www.rocketseat.com.br",
-      "trip_id": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
-    },
-    {
-      "id": "f944daf7-e7e6-47a2-b050-1556d6a9e963",
-      "title": "Website 2",
-      "url": "https://www.rocketseat2.com.br",
-      "trip_id": "f944daf7-e7e6-47a2-b050-1556d6a9e963"
-    }
-  ]
+    "links": [
+        {
+            "id": "e1b00fc4-f99a-4cd5-b33a-6db2b3b72716",
+            "title": "Reserva do AirBnB",
+            "url": "http://airbnb.com/reserva-journey",
+            "trip_id": "ce32c8a5-2c13-44fd-8050-27dfcf24c201"
+        }
+    ]
 }
 ```
 
@@ -334,10 +327,7 @@ Passo a passo para clonar e executar a aplicação na sua máquina:
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:pabloxt14/nlw-journey-node.git
-
-# Acesse a pasta do projeto no terminal
-$ cd nlw-journey-node
+$ git clone https://github.com/DanielEgiidio/planner_backend.git
 
 # Instale as dependências
 $ npm install
@@ -372,6 +362,3 @@ As seguintes principais ferramentas foram usadas na construção do projeto:
 
 Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações
 
-<p align="center">
-  Feito com 💜 por Pablo Alan 👋🏽 <a href="https://www.linkedin.com/in/pabloalan/" target="_blank">Entre em contato!</a>  
-</p>
