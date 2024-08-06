@@ -9,7 +9,7 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/danielegiidio/planner_backend">
   
-  <a href="https://github.com/pabloxt14/nlw-journey-node/commits/master">
+  <a href="https://github.com/danielegiidio/planner_backend/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/danielegiidio/planner_backend">
   </a>
     
@@ -40,10 +40,6 @@ Plann.er é uma aplicação de planejamento de viagens que permite criar e geren
 - Montar planos de viagens com amigos.
 - Registrar atividades e eventos importantes.
 - Adicionar links úteis e recursos sobre a viagem.
-
-<!-- ## 🔗 Deploy
-
-O deploy da aplicação pode ser acessada através da seguinte URL base: https://pabloxt14-nlw-expert-notes.vercel.app/ -->
 
 
 ## ⛕ Routes
